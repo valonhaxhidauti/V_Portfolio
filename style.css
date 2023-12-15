@@ -69,6 +69,9 @@ background-color:  #83dbd1;
     margin-left: 16px;
     margin-right: 16px;
 }
+.container1 {
+    margin: 10px 40px;
+}
 .contact__container {
     justify-items: center;
 }
