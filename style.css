@@ -51,10 +51,10 @@ color:#00B7A1;
 li:hover{
 color:white;
 }
-.form-inline > * {
+/* .form-inline > * {
 margin:5px 40px;
 margin-left: 6rem;
-}
+} */
 .card{
 background-color:  #83dbd1;
 }
