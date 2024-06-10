@@ -13,11 +13,12 @@ import { NAV_LINKS } from '@/lib/data';
 import { mergeClasses } from '@/lib/utils';
 import useWindowSize from '@/hooks/use-window-size';
 import useScroll from '@/hooks/use-scroll';
-import Link from '@/components/navigation/link';
+// import Link from '@/components/navigation/link';
 import ThemeSwitcher from '@/components/general/theme-switcher';
 import IconButton from '@/components/general/icon-button';
 import DownloadCV from '@/components/general/download-cv';
 import Typography from '@/components/general/typography';
+import Link from 'next/link';
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
@@ -45,7 +46,7 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="/" noCustomization>
+        <Link href="/" >
           <Logo />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
