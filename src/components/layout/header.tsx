@@ -13,12 +13,10 @@ import { NAV_LINKS } from '@/lib/data';
 import { mergeClasses } from '@/lib/utils';
 import useWindowSize from '@/hooks/use-window-size';
 import useScroll from '@/hooks/use-scroll';
-// import Link from '@/components/navigation/link';
 import ThemeSwitcher from '@/components/general/theme-switcher';
 import IconButton from '@/components/general/icon-button';
 import DownloadCV from '@/components/general/download-cv';
 import Typography from '@/components/general/typography';
-import Link from 'next/link';
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
@@ -46,14 +44,14 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="/" >
+        <a href="/" >
           <Logo />
-        </Link>
+        </a>
         <div className="hidden items-center gap-6 md:flex">
           <ul className="flex list-none items-center gap-6">
             {NAV_LINKS.map((link, index) => (
               <li key={index}>
-                <Link href={link.href}>{link.label}</Link>
+                <a href={link.href}>{link.label}</a>
               </li>
             ))}
           </ul>
@@ -83,7 +81,7 @@ const Header = () => {
               <ul className="flex list-none flex-col gap-4">
                 {NAV_LINKS.map((link, index) => (
                   <li key={index}>
-                    <Link
+                    <a
                       href={link.href}
                       onClick={() => {
                         const timeoutId = setTimeout(() => {
@@ -93,7 +91,7 @@ const Header = () => {
                       }}
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
