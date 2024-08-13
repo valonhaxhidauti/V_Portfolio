@@ -10,6 +10,7 @@ import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 
+import ProjectRentTu from '/public/images/project-rent-tu.png';
 import ProjectTwoJobs from '/public/images/project-twojobs.png';
 import ProjectInstagram from '/public/images/project-instagram-clone.png';
 import ProjectLanding from '/public/images/project-landing.png';
@@ -109,6 +110,18 @@ export const TECHNOLOGIES: TechDetails[] = [
 ];
 
 export const PROJECTS: ProjectDetails[] = [
+  {
+    name: 'Rent TU!',
+    description:
+      'A car renting website that i built using next.js for front end for a swiss company, the back end was built with laravel.',
+    url: 'https://rent-tu.netlify.app/en',
+    previewImage: ProjectRentTu,
+    technologies: [
+      'Next.js',
+      'Laravel',
+      'Tailwind'
+    ],
+  },
   {
     name: 'Two Jobs',
     description:
