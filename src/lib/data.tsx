@@ -115,6 +115,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A car renting website that i built using next.js for front end for a swiss company, the back end was built with laravel.",
     url: "https://rent-tu.netlify.app/en",
+    githubUrl: "https://github.com/valonhaxhidauti/car-renting-app",
     previewImage: ProjectRentTu,
     technologies: ["Next.js", "Laravel", "Tailwind"],
   },
@@ -123,6 +124,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A website for applying to jobs posted by different companies.",
     url: "https://two-jobs-app.netlify.app/",
+    githubUrl: "https://two-jobs-app.netlify.app/",
     previewImage: ProjectTwoJobs,
     technologies: ["Next.js", "Typescript", "SCSS/SASS"],
   },
@@ -131,6 +133,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A social network similiar to Instagram made using rapidapi endpoints.",
     url: "https://insta-valon.netlify.app",
+    githubUrl: "https://insta-valon.netlify.app",
     previewImage: ProjectInstagram,
     technologies: ["HTML", "CSS", "Javascript"],
   },
@@ -139,6 +142,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A multi-function website with multiple pages made using figma.",
     url: "https://valon-brand.netlify.app/",
+    githubUrl: "https://valon-brand.netlify.app/",
     previewImage: ProjectLanding,
     technologies: ["HTML", "CSS", "Javascript"],
   },
