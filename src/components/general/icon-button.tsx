@@ -42,7 +42,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
     return (
       <button
         className={mergeClasses(
-          'relative',
+          'relative group',
           iconButtonVariants({ size }),
           className
         )}
@@ -51,7 +51,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
       >
         {children}
         {showTooltip && tooltipText.length > 0 && (
-          <span className="absolute -top-8 rounded-lg bg-gray-200 px-2 py-1 text-sm">
+          <span className="hidden group-hover:block absolute -top-10 rounded-lg bg-gray-200 text-gray-800 px-2 py-1 whitespace-nowrap">
             {tooltipText}
           </span>
         )}

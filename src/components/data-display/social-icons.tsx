@@ -10,6 +10,8 @@ const SocialIcons = () => {
         <IconButton
           key={index}
           onClick={() => window.open(socialLink.url, '_blank')}
+          showTooltip={true}
+          tooltipText={socialLink.tooltip}
         >
           <socialLink.icon />
         </IconButton>
