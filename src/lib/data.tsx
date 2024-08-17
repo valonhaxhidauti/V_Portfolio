@@ -124,7 +124,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A website for applying to jobs posted by different companies.",
     url: "https://two-jobs-app.netlify.app/",
-    githubUrl: "https://two-jobs-app.netlify.app/",
+    githubUrl: "https://github.com/valonhaxhidauti/responsible_job_site",
     previewImage: ProjectTwoJobs,
     technologies: ["Next.js", "Typescript", "SCSS/SASS"],
   },
