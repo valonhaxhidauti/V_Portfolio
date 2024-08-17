@@ -133,7 +133,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A social network similiar to Instagram made using rapidapi endpoints.",
     url: "https://insta-valon.netlify.app",
-    githubUrl: "https://insta-valon.netlify.app",
+    githubUrl: "https://github.com/valonhaxhidauti/social-network",
     previewImage: ProjectInstagram,
     technologies: ["HTML", "CSS", "Javascript"],
   },
