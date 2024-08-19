@@ -142,7 +142,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A multi-function website with multiple pages made using figma.",
     url: "https://valon-brand.netlify.app/",
-    githubUrl: "https://valon-brand.netlify.app/",
+    githubUrl: "https://github.com/valonhaxhidauti/Blog-website",
     previewImage: ProjectLanding,
     technologies: ["HTML", "CSS", "Javascript"],
   },
