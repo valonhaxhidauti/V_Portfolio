@@ -1,11 +1,11 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import ValonStanding from '/public/images/valon-standing.jpg';
-import Tag from '@/components/data-display/tag';
-import Container from '@/components/layout/container';
-import Typography from '@/components/general/typography';
-import Link from '@/components/navigation/link';
-import { EXTERNAL_LINKS } from '@/lib/data';
+import ValonStanding from "/public/images/valon-standing.jpg";
+import Tag from "@/components/data-display/tag";
+import Container from "@/components/layout/container";
+import Typography from "@/components/general/typography";
+import Link from "@/components/navigation/link";
+import { EXTERNAL_LINKS } from "@/lib/data";
 
 const AboutMeSection = () => {
   return (
@@ -22,7 +22,7 @@ const AboutMeSection = () => {
               src={ValonStanding}
               alt="Valon standing"
               className="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
-              style={{ objectFit: 'cover' }}
+              style={{ objectFit: "cover" }}
             ></Image>
             <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
           </div>
@@ -34,18 +34,18 @@ const AboutMeSection = () => {
             Curious about me? Here you have it:
           </Typography>
           <Typography>
-            I&apos;m a passionate developer,
-            who specializes in front end development (React.js & Next.js). I am
-            enthusiastic about bringing the technical and visual aspects of
-            digital products to life. User experience, pixel perfect design, and
-            writing clear, readable, highly performant code matters to me.
+            I&apos;m a passionate developer, who specializes in front end
+            development (React.js & Next.js). I am enthusiastic about bringing
+            the technical and visual aspects of digital products to life. User
+            experience, pixel perfect design, and writing clear, readable,
+            highly performant code matters to me.
           </Typography>
           <Typography>
             I began my journey as a web developer in 2018, and since then,
             I&apos;ve continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now, 
-            after starting my web development journey, I&apos;m building 
-            cutting-edge web applications using modern technologies such as 
+            challenges and learning the latest technologies along the way. Now,
+            after starting my web development journey, I&apos;m building
+            cutting-edge web applications using modern technologies such as
             Next.js, TypeScript, Tailwindcss, Supabase and much more.
           </Typography>
           <Typography>
@@ -54,8 +54,8 @@ const AboutMeSection = () => {
           </Typography>
           <Typography>
             When I&apos;m not in full-on developer mode, you can find me
-            hovering around on instagram or enjoying some free time. You can follow
-            me on{' '}
+            hovering around on instagram or enjoying some free time. You can
+            follow me on{" "}
             <Link
               noCustomization
               externalLink
@@ -63,8 +63,8 @@ const AboutMeSection = () => {
               href={EXTERNAL_LINKS.INSTAGRAM}
             >
               Instagram
-            </Link>{' '}
-            or you can connect with me on{' '}
+            </Link>{" "}
+            or you can connect with me on{" "}
             <Link
               noCustomization
               externalLink
@@ -78,9 +78,7 @@ const AboutMeSection = () => {
           <Typography>Finally, some quick bits about me.</Typography>
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">
-                B.A. in Computer Science
-              </Typography>
+              <Typography component="li">B.A. in Computer Science</Typography>
               <Typography component="li">Full time developer</Typography>
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">

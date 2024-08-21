@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Copy, Mail, Phone } from 'lucide-react';
+import { useState } from "react";
+import { Copy, Mail, Phone } from "lucide-react";
 
-import SocialIcons from '@/components/data-display/social-icons';
-import Tag from '@/components/data-display/tag';
-import IconButton from '@/components/general/icon-button';
-import Typography from '@/components/general/typography';
-import Container from '@/components/layout/container';
-import useWindowSize from '@/hooks/use-window-size';
-import { copyTextToClipboard } from '@/lib/utils';
+import SocialIcons from "@/components/data-display/social-icons";
+import Tag from "@/components/data-display/tag";
+import IconButton from "@/components/general/icon-button";
+import Typography from "@/components/general/typography";
+import Container from "@/components/layout/container";
+import useWindowSize from "@/hooks/use-window-size";
+import { copyTextToClipboard } from "@/lib/utils";
 
-let email = 'valonidv10@gmail.com';
-let phone = '+383 45336084';
+let email = "valonidv10@gmail.com";
+let phone = "+383 45336084";
 
-type CopyValue = 'email' | 'phone';
+type CopyValue = "email" | "phone";
 
 const ContactSection = () => {
   const { width } = useWindowSize();
@@ -36,7 +36,7 @@ const ContactSection = () => {
     } catch (error) {
       setIsCopied(false);
       setCopiedValueType(null);
-      alert('Unable to copy!');
+      alert("Unable to copy!");
     }
   };
 
@@ -58,9 +58,9 @@ const ContactSection = () => {
             <Mail className="h-6 w-6 md:h-8 md:w-8" />
             <Typography variant="h2">{email}</Typography>
             <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(email, 'email')}
-              showTooltip={isCopied && copiedValueType === 'email'}
+              size={width && width < 768 ? "md" : "lg"}
+              onClick={() => handleCopyClick(email, "email")}
+              showTooltip={isCopied && copiedValueType === "email"}
               tooltipText="Copied!"
             >
               <Copy />
@@ -70,9 +70,9 @@ const ContactSection = () => {
             <Phone className="h-6 w-6 md:h-8 md:w-8" />
             <Typography variant="h2">{phone}</Typography>
             <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
-              showTooltip={isCopied && copiedValueType === 'phone'}
+              size={width && width < 768 ? "md" : "lg"}
+              onClick={() => handleCopyClick(phone.replace(" ", ""), "phone")}
+              showTooltip={isCopied && copiedValueType === "phone"}
               tooltipText="Copied!"
             >
               <Copy />
