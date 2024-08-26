@@ -1,36 +1,31 @@
-import Script from 'next/script';
-import { Inter } from 'next/font/google';
-import { Metadata } from 'next';
+import Script from "next/script";
+import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
-import './globals.css';
-import Header from '@/components/layout/header';
-import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+import "./globals.css";
+import Header from "@/components/layout/header";
+import { Providers } from "@/lib/providers";
+import Footer from "@/components/layout/footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-const title = 'Valon Haxhidauti | Front-end Developer From Gjakova, Kosovo.';
+const title = "Valon Haxhidauti | Front-end Developer From Gjakova, Kosovo.";
 const description =
-  'A developer who specializes in front-end development (React.js & Next.js), from Gjakova, Kosovo.';
-
+  "A developer who specializes in front-end development (React.js & Next.js), from Gjakova, Kosovo.";
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: [
-    'Frontend Developer',
-    'React Developer',
-    'Next.js Developer',
-  ],
-  creator: 'Valon Haxhidauti',
+  keywords: ["Frontend Developer", "React Developer", "Next.js Developer"],
+  creator: "Valon Haxhidauti",
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
