@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 
-import ValonProfile from "/public/images/valon-profile.jpg";
+import ValonProfile from "/public/images/valon-profile1.png";
 import SocialIcons from "@/components/data-display/social-icons";
 import Typography from "@/components/general/typography";
 import Container from "@/components/layout/container";
