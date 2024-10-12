@@ -9,7 +9,7 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const title = "Valon Haxhidauti | Front-end Developer From Gjakova, Kosovo.";
+const title = "Valon Haxhidauti";
 const description =
   "A developer who specializes in front-end development (React.js & Next.js), from Gjakova, Kosovo.";
 

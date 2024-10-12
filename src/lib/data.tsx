@@ -114,7 +114,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: "Rent TU!",
     description:
       "A car renting website that i built using next.js for front end for a swiss company, the back end was built with laravel.",
-    url: "https://rent-tu.netlify.app/en",
+    url: "https://abag-rent.ch",
     githubUrl: "https://github.com/valonhaxhidauti/car-renting-app",
     previewImage: ProjectRentTu,
     technologies: ["Next.js", "Laravel", "Tailwind"],
