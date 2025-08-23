@@ -5,7 +5,7 @@ import LogoTypescript from "/public/images/logos/icon-typescript.svg";
 import LogoReact from "/public/images/logos/icon-react.svg";
 import LogoNextjs from "/public/images/logos/icon-nextjs.svg";
 import LogoNodejs from "/public/images/logos/icon-nodejs.svg";
-import LogoPostgreSQL from "/public/images/logos/icon-postgresql.svg";
+import LogoLaravel from "/public/images/logos/icon-laravel.svg";
 import LogoSass from "/public/images/logos/icon-sass.svg";
 import LogoTailwindcss from "/public/images/logos/icon-tailwindcss.svg";
 import LogoGit from "/public/images/logos/icon-git.svg";
@@ -68,9 +68,14 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    label: "Typescript",
-    logo: LogoTypescript,
-    url: "https://www.typescriptlang.org/",
+    label: "Laravel",
+    logo: LogoLaravel,
+    url: "https://laravel.com/",
+  },
+  {
+    label: "Tailwindcss",
+    logo: LogoTailwindcss,
+    url: "https://tailwindcss.com/",
   },
   {
     label: "React",
@@ -83,19 +88,14 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: "https://nextjs.org/",
   },
   {
+    label: "Typescript",
+    logo: LogoTypescript,
+    url: "https://www.typescriptlang.org/",
+  },
+  {
     label: "Sass/Scss",
     logo: LogoSass,
     url: "https://sass-lang.com/",
-  },
-  {
-    label: "Tailwindcss",
-    logo: LogoTailwindcss,
-    url: "https://tailwindcss.com/",
-  },
-  {
-    label: "PostgreSQL",
-    logo: LogoPostgreSQL,
-    url: "https://www.postgresql.org/",
   },
   {
     label: "Node.js",
