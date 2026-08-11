@@ -5,7 +5,7 @@ import Button from "@/components/general/button";
 const DownloadCV = () => {
   return (
     <Button
-      onClick={() => window?.open("/files/valon-haxhidauti-cv.pdf", "_blank")}
+      onClick={() => window?.open("/files/Valon_Haxhidauti_CV.pdf", "_blank")}
     >
       Download CV
     </Button>

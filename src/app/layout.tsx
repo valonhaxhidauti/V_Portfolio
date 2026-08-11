@@ -1,6 +1,6 @@
 import Script from "next/script";
 import { Inter } from "next/font/google";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 import "./globals.css";
 import Header from "@/components/layout/header";
@@ -18,15 +18,18 @@ export const metadata: Metadata = {
   description,
   keywords: ["Frontend Developer", "React Developer", "Next.js Developer"],
   creator: "Valon Haxhidauti",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 const googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID;
@@ -54,7 +57,10 @@ export default function RootLayout({
           </Script>
         </head>
       ) : null}
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
+      <body
+        className={`${inter.className} bg-gray text-gray-600 antialiased`}
+        suppressHydrationWarning
+      >
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>
